@@ -3,7 +3,7 @@ $(function () {
     $('main').fullpage({
 
         scrollingSpeed: 500,
-        anchors: ['main', 'design', 'desc', 'content', 'project'],
+        anchors: ['main', 'design', 'desc', 'content', 'project', 'footer'],
         responsiveWidth: 1200,
         responsiveHeight: 700,
         onLeave: function (name, idx) {
@@ -33,35 +33,28 @@ $(function () {
     const main_visual_slide = new Swiper('.visual_slide', {
         effect: 'fade',
         autoplay: {
-            delay: 4000,
+            delay: 3000,
         },
     })
 
     const main_design_ext_slide = new Swiper('.design_ext_slide', {
         loop: true,
+        parallax: true,
+        speed: 3000,
     })
     const main_design_space_slide = new Swiper('.design_space_slide', {
         loop: true,
-
-        on: {
-            slideChangeTransitionStart: function () {
-                $('#main_content .itm02 .line').removeClass('on');
-            },
-
-        }
-
-
-
+        parallax: true,
     })
 
     $('.main_design .tit .design_ext .prev').on('click', function () {
 
-        main_design_ext_slide.slidePrev(600);
+        main_design_ext_slide.slidePrev(1000);
 
     })
     $('.main_design .tit .design_ext .next').on('click', function () {
 
-        main_design_ext_slide.slideNext(600);
+        main_design_ext_slide.slideNext(1000);
 
     })
     $('.main_design .tit .design_space .prev').on('click', function () {
@@ -98,6 +91,8 @@ $(function () {
             .siblings()
             .removeClass('on')
     })
+
+
 
     feather.replace();
 

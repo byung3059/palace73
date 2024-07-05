@@ -11,12 +11,14 @@
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/jquery.fullpage.css">
     <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/jquery.mb.YTPlayer.min.css">
     <link rel="stylesheet" href="./css/style.css">
 
     <script src="./js/jquery-1.12.4.js"></script>
     <script src="./js/jquery.fullpage.js"></script>
     <script src="./js/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="./js/jquery.mb.YTPlayer.min.js"></script>
     <script src="./js/custom.js"></script>
 </head>
 
@@ -88,10 +90,18 @@
                     <div class="con con01 on">
                         <div class="design_ext_slide swiper">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide itm itm01">01</div>
-                                <div class="swiper-slide itm itm02">02</div>
-                                <div class="swiper-slide itm itm03">03</div>
-                                <div class="swiper-slide itm itm04">04</div>
+                                <div class="swiper-slide itm itm01">
+                                    <div class="slide_img" data-swiper-parallax="60%">01</div>
+                                </div>
+                                <div class="swiper-slide itm itm02">
+                                    <div class="slide_img" data-swiper-parallax="60%">01</div>
+                                </div>
+                                <div class="swiper-slide itm itm03">
+                                    <div class="slide_img" data-swiper-parallax="60%">01</div>
+                                </div>
+                                <div class="swiper-slide itm itm04">
+                                    <div class="slide_img" data-swiper-parallax="60%">01</div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -99,10 +109,18 @@
                     <div class="con con02">
                         <div class="design_space_slide swiper">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide itm itm01">01</div>
-                                <div class="swiper-slide itm itm02">02</div>
-                                <div class="swiper-slide itm itm03">03</div>
-                                <div class="swiper-slide itm itm04">04</div>
+                                <div class="swiper-slide itm itm01">
+                                    <div class="slide_img" data-swiper-parallax="60%">01</div>
+                                </div>
+                                <div class="swiper-slide itm itm02">
+                                    <div class="slide_img" data-swiper-parallax="60%">01</div>
+                                </div>
+                                <div class="swiper-slide itm itm03">
+                                    <div class="slide_img" data-swiper-parallax="60%">01</div>
+                                </div>
+                                <div class="swiper-slide itm itm04">
+                                    <div class="slide_img" data-swiper-parallax="60%">01</div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -135,11 +153,13 @@
                     생명력 강한 상징물로 자리하게 될 것입니다.</p>
             </div>
 
-            <div class="video_box">
-                <iframe src="https://player.vimeo.com/video/940651321?background=1&loop=1&autopause=0&quality=1080p"
-                    frameborder="0"></iframe>
+            <div class="video">
+                <div class="video_box">
+                    <iframe
+                        src="https://player.vimeo.com/video/940651321?background=1&amp;loop=1&amp;autopause=0&amp;quality=1080p"
+                        frameborder="0" allowfullscreen="" data-ready="true"></iframe>
+                </div>
             </div>
-
         </section>
 
         <section class="main_content section">
@@ -199,11 +219,45 @@
             </div>
 
         </section>
+
+
+        <footer class="footer section fp-auto-height">
+
+            <div class="inner">
+                <div class="ft">
+                    <ul>
+                        <li>
+                            <ul>
+                                <li>시공사</li>
+                                <li><img src="./images/samsung_c&t.png" alt=""></li>
+                            </ul>
+                        </li>
+                        <li>주소 : 63-1, 64-1, Banpo-dong, Seocho-gu, Seoul</li>
+                    </ul>
+                </div>
+                <div class="fb">
+                    <ul>
+                        <p>웹사이트는 소비자의 이해를 돕기 위해 제작된 사전홍보물로<br />
+                            실제와 다를 수 있으니 견본주택 및 현장을 방문하시어 직접 확인하시기 바랍니다.
+                        </p>
+                        <p>
+                            웹사이트에 표시된 개발계획은 사업주체, 국가기관, 지자체 및<br />
+                            기타 기관에서 발표한 내용을 참조한 것으로 관계 기관에 따라 사업추진 중<br />
+                            일부 변경, 지연, 취소될 수 있습니다.
+                        </p>
+                        <p>웹사이트 제작에 사용된 CG 및 이미지 등은<br />
+                            소비자의 이해를 돕기 위한 것으로, 실제와 다소 차이가 있을 수 있으며<br />
+                            인·허가 과정 및 실제 시공 시 변경될 수 있습니다.</p>
+                    </ul>
+                </div>
+            </div>
+
+        </footer>
     </main>
 
-    <footer class="footer">
 
-    </footer>
+
+
 
 </body>
 
