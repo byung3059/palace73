@@ -3,7 +3,7 @@ $(function () {
     $('main').fullpage({
 
         scrollingSpeed: 500,
-        anchors: ['main', 'design', 'desc', 'content', 'project', 'footer'],
+        anchors: ['main', 'design', 'desc', 'content', 'project', 'map', 'samsung', 'footer'],
         responsiveWidth: 1200,
         responsiveHeight: 700,
         onLeave: function (name, idx) {
@@ -27,8 +27,22 @@ $(function () {
                 $('.header').removeClass('content');
 
             }
+            if (idx === 6) {
+                $('.header').addClass('map');
+
+            } else {
+                $('.header').removeClass('map');
+
+            }
         },
     });
+
+    $('.header .inner .mbtn').on('click', function () {
+
+        $(this).toggleClass('on')
+        $('.header .inner .gnb').toggleClass('on')
+
+    })
 
     const main_visual_slide = new Swiper('.visual_slide', {
         effect: 'fade',

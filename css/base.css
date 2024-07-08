@@ -21,13 +21,23 @@ body {
 }
 
 h2 {
+    margin: 0 0 24px 0;
     font-size: 64px;
     line-height: 64px;
     font-weight: 700;
+    text-indent: -1px;
 }
 
 .desc {
     font-size: 16px;
     line-height: 32px;
     font-weight: 300;
+    color: var(--desc-color);
+}
+
+strong {
+    display: block;
+    margin: 0 0 24px 0;
+    font-size: 24px;
+    line-height: 24px;
 }
