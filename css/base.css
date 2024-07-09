@@ -43,6 +43,8 @@ strong {
 }
 
 @media(max-width:768px) {
+
+
     .default {
         background: #fff;
         padding: 40px 16px;

@@ -317,6 +317,12 @@
     }
 }
 
+@media(max-width:480px) {
+    .header .inner .gnb>ul>li>a {
+        left: 40px;
+    }
+}
+
 
 
 
@@ -373,10 +379,11 @@
 }
 
 @media(max-width:768px) {
+
+
     .main_visual {
         position: sticky;
-        width: 100%;
-        height: 50vh;
+
         top: 0;
         left: 0;
         right: 0;
@@ -585,6 +592,38 @@
     }
 }
 
+@media(max-width:480px) {
+
+    .main_design .tit h2 {
+        margin: 0 0 16px 0;
+        text-indent: -2px;
+    }
+
+    .main_design::before {
+        bottom: 0;
+        height: 40%;
+        width: 100%;
+    }
+
+    .main_design .tit {
+        bottom: 12px;
+        top: inherit;
+        transform: translate(-50%, 0);
+    }
+
+    .main_design .design_ext_slide .itm .slide_img {
+        background-position-x: -700px;
+    }
+
+    .main_design .design_ext_slide .itm02 .slide_img {
+        background-position-x: -600px;
+    }
+
+    .main_design .design_ext_slide .itm03 .slide_img {
+        background-position-x: -600px;
+    }
+}
+
 
 
 
@@ -717,6 +756,12 @@
 }
 
 @media(max-width:480px) {
+
+    .main_desc {
+        z-index: 9;
+        border-bottom: 1px solid #fff;
+    }
+
     .main_desc .txt_box {
         flex-direction: column;
     }
@@ -793,6 +838,10 @@
 }
 
 @media(max-width:768px) {
+    .main_content {
+        margin-top: -1px;
+    }
+
     .main_content .inner {
         padding: 0;
     }
@@ -831,6 +880,14 @@
     }
 }
 
+@media(max-width:480px) {
+    .main_content .content_top .content_desc strong {
+        line-height: 24px;
+        word-break: keep-all;
+        width: 350px;
+    }
+}
+
 
 
 
@@ -861,6 +918,10 @@
 }
 
 @media(max-width:768px) {
+    .main_project {
+        margin-top: -1px;
+    }
+
     .main_project .inner {
         padding: 0;
     }
@@ -915,6 +976,8 @@
 
 @media(max-width:768px) {
     .main_map {
+        border-top: 1px solid #ddd;
+        margin-top: -1px;
         background: var(--white-color);
     }
 
@@ -974,6 +1037,11 @@
 }
 
 @media(max-width:768px) {
+    .main_samsung {
+        border-top: 1px solid #ddd;
+        margin-top: -1px;
+    }
+
     .main_samsung .inner {
         padding: 0;
         flex-direction: column;
@@ -1032,4 +1100,10 @@
 
 .footer .inner .fb p {
     margin: 0 0 16px 0;
+}
+
+@media(max-width) {
+    .footer {
+        margin-top: -1px;
+    }
 }
