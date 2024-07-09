@@ -20,6 +20,16 @@ $(function () {
                 $('.header').removeClass('on');
                 $('.aside').removeClass('on');
             }
+
+            if (idx == 3) {
+                $('.video_box').addClass('on');
+                $('.video_box').v_play();
+
+            } else {
+                $('.video_box').removeClass('on');
+                $('.video_box').v_pause();
+            }
+
             if (idx === 4) {
                 $('.header').addClass('content');
                 $('.main_content .content_top .img_box').addClass('on');
@@ -117,6 +127,15 @@ $(function () {
             .siblings()
             .removeClass('on')
     })
+
+    $('.video_box').vimeo_player({
+        videoURL: 'https://player.vimeo.com/video/940651321?background=1&loop=1&autopause=0&quality=1080p',
+        containment: 'self',
+        showControls: false,
+        playOnlyIfVisible: false,
+        useOnMobile: true,
+        loop: true,
+    });
 
 
 
