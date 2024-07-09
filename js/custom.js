@@ -22,17 +22,25 @@ $(function () {
             }
             if (idx === 4) {
                 $('.header').addClass('content');
+                $('.main_content .content_top .img_box').addClass('on');
+                $('.main_content .content_bottom .img_box').addClass('on');
 
             } else {
                 $('.header').removeClass('content');
-
             }
+            if (idx === 5) {
+                $('.main_project .inner .img_box').addClass('on');
+            }
+
             if (idx === 6) {
                 $('.header').addClass('map');
 
             } else {
                 $('.header').removeClass('map');
+            }
 
+            if (idx === 7) {
+                $('.main_samsung .inner .itm').addClass('on');
             }
         },
     });

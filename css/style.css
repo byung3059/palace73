@@ -610,8 +610,6 @@
 @media(max-width:768px) {
     .main_design .itm {
         height: 50vh;
-
-        min-height: 0;
     }
 
     .main_design .tit {
@@ -851,6 +849,17 @@
 
 .main_content .content_top .img_box {
     order: -1;
+    overflow: hidden;
+}
+
+.main_content .content_top .img_box img {
+    transform: scale(1.3);
+    transition: 1s;
+}
+
+.main_content .content_top .img_box.on img {
+    transform: scale(1);
+    transition: 2s;
 }
 
 .main_content .content_bottom {
@@ -870,6 +879,20 @@
 .main_content .content_bottom .content_desc p {
     font-weight: 300;
     color: var(--desc-color);
+}
+
+.main_content .content_bottom .img_box {
+    overflow: hidden;
+}
+
+.main_content .content_bottom .img_box img {
+    transform: scale(1.3);
+    transition: 1s;
+}
+
+.main_content .content_bottom .img_box.on img {
+    transform: scale(1);
+    transition: 2s;
 }
 
 @media(max-width:768px) {
@@ -947,10 +970,23 @@
     text-align: left;
 }
 
+.main_project .inner .img_box {
+    overflow: hidden;
+}
+
 .main_project .inner .img_box img {
+    transform: scale(1.3);
+    transition: 1s;
+}
+
+.main_project .inner .img_box.on img {
     width: 100%;
     height: 100%;
+    transform: scale(1);
+    transition: 2s;
 }
+
+.main_project .inner .img_box img {}
 
 @media(max-width:768px) {
     .main_project {
@@ -1077,6 +1113,12 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transform: scale(1.3);
+}
+
+.main_samsung .inner .itm.on img {
+    transform: scale(1);
+    transition: 2s;
 }
 
 @media(max-width:768px) {
