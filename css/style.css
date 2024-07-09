@@ -622,6 +622,10 @@
     .main_design .design_ext_slide .itm03 .slide_img {
         background-position-x: -600px;
     }
+
+    .main_design .tit .arrows.on {
+        margin-left: -4px;
+    }
 }
 
 
@@ -724,7 +728,7 @@
 
     .main_desc .txt_box .tit h2 {
         text-indent: 0;
-        margin: 0 0 16px -4px;
+        margin: 0 0 16px -2px;
     }
 
     .main_desc .txt_box .tit strong {
@@ -1028,6 +1032,10 @@
 .main_samsung .inner .tit {
     order: 1;
     text-align: end;
+}
+
+.main_samsung .inner .tit h2 {
+    line-height: 72px;
 }
 
 .main_samsung .inner .itm img {
