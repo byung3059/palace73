@@ -24,12 +24,16 @@ $(function () {
                 $('.header').addClass('content');
                 $('.main_content .content_top .img_box').addClass('on');
                 $('.main_content .content_bottom .img_box').addClass('on');
-
             } else {
                 $('.header').removeClass('content');
+                $('.main_content .content_top .img_box').removeClass('on');
+                $('.main_content .content_bottom .img_box').removeClass('on');
             }
+
             if (idx === 5) {
                 $('.main_project .inner .img_box').addClass('on');
+            } else {
+                $('.main_project .inner .img_box').removeClass('on');
             }
 
             if (idx === 6) {
@@ -113,6 +117,8 @@ $(function () {
             .siblings()
             .removeClass('on')
     })
+
+
 
 
 
