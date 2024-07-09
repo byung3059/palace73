@@ -390,7 +390,7 @@
     }
 }
 
-@media(max-width:390px) {
+@media(max-width:480px) {
     .main_visual .visual_slide .slg {
         top: 32%;
     }
@@ -716,7 +716,7 @@
     }
 }
 
-@media(max-width:390px) {
+@media(max-width:480px) {
     .main_desc .txt_box {
         flex-direction: column;
     }
