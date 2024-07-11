@@ -3,7 +3,7 @@ $(function () {
     $('main').fullpage({
 
         scrollingSpeed: 500,
-        anchors: ['main', 'design', 'desc', 'content', 'project', 'map', 'samsung', 'footer'],
+        anchors: ['main', 'design', 'desc', 'content', 'project', 'brand', 'map', 'samsung', 'footer'],
         responsiveWidth: 1200,
         responsiveHeight: 700,
         onLeave: function (name, idx) {
@@ -36,24 +36,24 @@ $(function () {
                 $('.main_content .content_bottom .img_box').addClass('on');
             } else {
                 $('.header').removeClass('content');
-                $('.main_content .content_top .img_box').removeClass('on');
-                $('.main_content .content_bottom .img_box').removeClass('on');
             }
 
             if (idx === 5) {
                 $('.main_project .inner .img_box').addClass('on');
-            } else {
-                $('.main_project .inner .img_box').removeClass('on');
             }
 
             if (idx === 6) {
+                $('.main_brand .inner .itm .img_box').addClass('on');
+            }
+
+            if (idx === 7) {
                 $('.header').addClass('map');
 
             } else {
                 $('.header').removeClass('map');
             }
 
-            if (idx === 7) {
+            if (idx === 8) {
                 $('.main_samsung .inner .itm').addClass('on');
             }
         },
