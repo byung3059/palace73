@@ -1,8 +1,11 @@
 :root {
-    --primary-color: #E86003;
     --white-color: #ffffff;
-    --black-color: #000000;
+    --black-color: #222222;
     --desc-color: #444444;
+    --footer-back: #999999;
+    --footer-color: #f9f9f9;
+    --line-color: #dddddd;
+    --background-color: #eeeeee;
 }
 
 body {
@@ -46,10 +49,10 @@ strong {
 
 
     .default {
-        background: #fff;
+        background: var(--white-color);
         padding: 40px 16px;
 
-        border-bottom: 1px solid #eee;
+        border-bottom: 1px solid var(--background-color);
     }
 
     h2 {
