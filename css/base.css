@@ -63,15 +63,15 @@ strong {
         display: block;
         margin: 0 0 16px 0;
         font-size: 18px;
-        line-height: 16px;
+        line-height: 24px;
+        word-break: keep-all;
     }
 
     .desc {
-        font-size: 16px;
+        font-size: 14px;
         line-height: 24px;
         font-weight: 300;
         color: var(--desc-color);
-        margin-left: 1px;
         text-indent: -1px;
     }
 

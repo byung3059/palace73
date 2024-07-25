@@ -4,8 +4,7 @@ $(function () {
 
         scrollingSpeed: 500,
         anchors: ['main', 'design', 'desc', 'content', 'project', 'samsung', 'map', 'footer'],
-        responsiveWidth: 1200,
-        responsiveHeight: 700,
+        responsiveWidth: 769,
         onLeave: function (name, idx) {
             $('.aside .lnb li')
                 .eq(idx - 1)
@@ -66,6 +65,12 @@ $(function () {
 
         $(this).toggleClass('on')
         $('.header .inner .gnb').toggleClass('on')
+
+    })
+
+    $('.header .inner .gnb li a').on('click', function (e) {
+
+        e.preventDefault();
 
     })
 

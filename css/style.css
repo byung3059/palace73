@@ -240,20 +240,21 @@
     .header .mbtn {
         position: absolute;
         right: 16px;
-        width: 36px;
-        height: 36px;
+        width: 32px;
+        height: 32px;
     }
 
     .header .mbtn button::before {
-        top: 17px;
+        top: 15px;
     }
 
     .header .mbtn button::after {
-        top: 17px;
+        top: 15px;
     }
 
     .header .inner .gnb {
-        width: calc(100% - 200px);
+        width: 100%;
+        right: -100%;
     }
 
     .header .inner .gnb>ul {
@@ -322,6 +323,7 @@
 
 .main_visual .visual_slide .slg strong {
     display: block;
+    margin: 0;
     font-size: 180px;
     line-height: 180px;
     font-weight: 500;
@@ -645,7 +647,6 @@
 
 .main_desc .txt p {
     position: relative;
-    margin: 24px 0 0 0;
     text-align: right;
 }
 
@@ -725,10 +726,6 @@
         margin: 0;
     }
 
-    .main_desc .txt .desc:last-child {
-        margin: 16px 0 0 0;
-    }
-
     .main_desc .tit {
         position: static;
         transform: translate(0, 0);
@@ -768,18 +765,6 @@
 
 .main_content .inner {
     padding-top: 80px;
-}
-
-.main_content .inner .img_box {
-    position: relative;
-}
-
-.main_content .inner .img_box.on::before {
-    content: '';
-    position: absolute;
-    z-index: 9;
-    inset: 0 0 0 0;
-    border: 1px solid #ddd;
 }
 
 .main_content .content_top {
@@ -1000,6 +985,8 @@
 .main_samsung .inner .s_inner .img_box img {
     transform: scale(1.3);
     transition: 1s;
+
+    filter: grayscale(1);
 }
 
 .main_samsung .inner .s_inner .img_box.on img {
@@ -1125,45 +1112,42 @@
 
 
 .footer {
+    padding: 60px 0;
     font-size: 14px;
-    color: #eee;
-    background: #666;
+    background: #999;
 }
 
-.footer .inner .ft {
-    margin: 40px 0;
+.footer .inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.footer .inner .ft>ul {
+.footer .inner .fl>ul {
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    align-items: center;
-    justify-content: center;
 }
 
-.footer .inner .ft>ul>li>ul {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+.footer .inner .fl>ul>li {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+
+    color: #f9f9f9;
 }
 
-.footer .inner .ft>ul>li>ul>li:first-child {
-    font-size: 18px;
-    line-height: 27px;
-}
-
-.footer .inner .fb {
-    text-align: center;
-    margin: 40px 0;
-}
-
-.footer .inner .fb p {
-    margin: 0 0 16px 0;
-}
-
-@media(max-width) {
+@media(max-width:768px) {
     .footer {
-        margin-top: -1px;
+        padding: 40px 16px;
+    }
+
+    .footer .inner {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer .inner .fl>ul>li {
+        font-size: 12px;
+        word-break: keep-all;
     }
 }
