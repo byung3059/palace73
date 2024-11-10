@@ -137,7 +137,7 @@ $(function () {
     })
 
     $('.video_box').vimeo_player({
-        videoURL: 'https://player.vimeo.com/video/940651321?background=1&loop=1&autopause=0&quality=1080p',
+        videoURL: 'https://player.vimeo.com/video/1018138811?background=1&loop=1&autopause=0&quality=1080p',
         containment: 'self',
         showControls: false,
         playOnlyIfVisible: false,
